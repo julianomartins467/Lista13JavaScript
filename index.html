@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/functions.js"></script>    
+    <style>
+        h5{
+            color: red;
+        }
+        label{
+            font-weight: bolder;
+            
+        }
+       
+
+input[type="button"] {
+    
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    padding: 10px; 
+    border-radius: 5px;    
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+input[type="button"]:hover{
+
+   font-size: 9px;
+}
+
+       
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Qual o seu perfil?</h1>
+     <div class="cadastro">
+         <h5>OBS: Todas as informações são de preenchimento obrigatorio</h5>
+         <p></p>
+         <form id="cadastro">
+             <label for="txtNome">Nome</label><br> 
+             <input id="txtNome" name="nome" type="text" maxlength="40" id="txtNome"><p></p>
+             
+             <label for="txtIdade">Idade</label><br>
+             <input id="txtIdade" name="txtIdade" type="int" maxlength="10"><p></p>
+
+             <label for="txtEscolha">Qual seu passatempo preferido?</label><p></p>
+             <select id="perfil">
+                 <option value="A">Curtir a Natureza (Cachoeira, etx)...</option>
+                 <option value="S">Ir ao Shopping</option>
+                 
+             </select> <p></p>
+            
+             <input type="button" value="Ver Opçoes de Carro" onclick="validarFormulario(); redirecionaAguarde()">
+             <input type="button" value="Limpar" onclick="cadastrar()"><br>
+             </p>
+             
+         </form>
+         
+     </div>
+     </center>
+     </body>
+ 
+</html>
